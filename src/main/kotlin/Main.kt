@@ -1,19 +1,23 @@
+/*
 fun main()
 {
     println("Hello Kotlin")
 }
+*/
 
+/*
 fun main(vararg args: String)
 {
     println("Hello Kotlin")
 }
+*/
 
 fun main(args: Array<String>)
 {
     println("Hello Kotlin")
 }
 
-object MainObject
+object Main
 {
     @JvmStatic
     fun main(args: Array<String>)
@@ -36,7 +40,7 @@ class ObjectMain
 
 class CompanionMain
 {
-    companion object Main
+    companion object
     {
         @JvmStatic
         fun main(args: Array<String>)
@@ -46,9 +50,9 @@ class CompanionMain
     }
 }
 
-class UnnamedCompanionMain
+class NamedCompanionMain
 {
-    companion object
+    companion object Main
     {
         @JvmStatic
         fun main(args: Array<String>)
